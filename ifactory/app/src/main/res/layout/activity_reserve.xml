@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReserveActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ecf0f1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="انتخاب مکان" />
+
+                <Spinner
+                    android:id="@+id/spinnerPlacePickerReserveActivity"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:background="@drawable/rounded_spinner"
+                    android:layoutDirection="rtl"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textDirection="rtl" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="انتخاب زمان" />
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    app:cardCornerRadius="5dp"
+                    app:strokeColor="#000"
+                    app:strokeWidth="1dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginStart="5dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/buttonDatePicker"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+
+                            android:backgroundTint="#7f8c8d"
+                            android:onClick="showCalendar"
+                            android:text="انتخاب تاریخ" />
+
+                        <ScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <RadioGroup
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="ساعت 8 - 10" />
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="false"
+                                    android:text="ساعت 11 - 13 رزرو شده است"
+                                    android:textColor="#ccc" />
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="false"
+                                    android:text="ساعت 14 - 16 رزرو شده است"
+                                    android:textColor="#ccc" />
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="ساعت 17 - 19" />
+
+                                <RadioButton
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="ساعت 21 - 23" />
+                            </RadioGroup>
+
+                        </ScrollView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="انتخاب ساعت" />
+
+
+                    </LinearLayout>
+
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:text="ثبت درخواست نوبت"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

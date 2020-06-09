@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">iFACTORY</string>
+    <string name="back4app_app_id">HSoREBzOJ58U6u2LjfrnNlzbjFU4gGVxqNGtm6ME</string>
+    <string name="back4app_client_key">EHBjx9xqdA7HJJrUMgUeTw8olYzeQgBiQRvenhF8</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/login</string>
+
+</resources>

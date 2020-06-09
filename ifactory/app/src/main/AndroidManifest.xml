@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.smile.ifactory"
+    tools:ignore="ExtraText">
+
+    <application
+        android:name=".App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/ProfilePageTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".BlogActivity" />
+        <activity android:name=".ReserveActivity" />
+        <activity android:name=".TicketSentActivity" />
+        <activity android:name=".TicketSendActivity" />
+        <activity android:name=".TicketActivity" />
+        <activity android:name=".CallActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".LoginActivity"
+            android:theme="@style/LoginTheme">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+        </activity>
+        <activity
+            android:name=".UserControlActivity"
+            android:theme="@style/LoginTheme">
+        </activity>
+
+        <meta-data
+            android:name="com.parse.CLIENT_KEY"
+            android:value="@string/back4app_client_key" />
+        <meta-data
+            android:name="com.parse.SERVER_URL"
+            android:value="@string/back4app_server_url" />
+        <meta-data
+            android:name="com.parse.APPLICATION_ID"
+            android:value="@string/back4app_app_id" />
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>
